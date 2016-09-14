@@ -1,23 +1,20 @@
 Template.home.onCreated(function() {
-  this.subscribe('posts');
+  this.subscribe('recs');
 });
 
 Template.home.helpers({
   count() {
-    return Posts.find().count();
+    return Recs.find().count();
   }
 });
 
 Template.home.events({
-  'click #increment': function(e) {
+
+  'click #hello': function(e) {
     e.preventDefault();
 
-    Meteor.call('addPost');
-  },
+    // Meteor.call('deletePost');
 
-  'click #decrement': function(e) {
-    e.preventDefault();
-
-    Meteor.call('deletePost');
+    alert('Hello World');
   }
 })
