@@ -1,0 +1,7 @@
+{
+  "galaxy.meteor.com": {
+     "env": {
+       "MONGO_URL": "mongodb://kevando:kevando1@ds029496.mlab.com:29496/chaz-beta" 
+     }
+   }
+}
