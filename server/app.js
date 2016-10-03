@@ -15,3 +15,15 @@ Meteor.publish('recs', function() {
     return Recs.find();
       // return Posts.find({flagged: false});
 });
+Meteor.publish('recrs', function() {
+    return Recs.find();
+});
+
+
+Meteor.publish('init', function() {
+
+    return [
+      Recs.find(),
+      Recrs.find()
+    ];
+});
