@@ -1,5 +1,7 @@
-import details from './details';
+import recrs from './recrs';
+import recs from './recs';
 
 export default function (){
-  details();
+  recrs();
+  recs();
 }
