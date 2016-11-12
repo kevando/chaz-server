@@ -1,0 +1,17 @@
+<template name="Register">
+  {{> Nav}}
+
+  <p>Create New User</p>
+  <form class="new-user">
+    <input type="text" name="username" placeholder="Username" />
+    <input type="submit" value="Create User" />
+  </form>
+
+  <hr />
+
+  <h1>chaz Users</h1>
+  {{#each users}}
+    <h4>{{username}}</h4>
+  {{/each}}
+
+</template>

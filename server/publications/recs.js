@@ -22,5 +22,10 @@ export default () => {
 
     return myRecs;
 
-});
+  });
+
+  Meteor.publish('recs-all', function tasksPublication() {
+    return Recs.find({},{sort: {createdAt: -1}});
+  });
+
 }

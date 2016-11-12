@@ -1,1 +1,8 @@
 /* CSS declarations go here */
+* {font-family: 'Courier'}
+body {background: #eee; }
+
+h1,h2,h3,h4,p {margin: 10px 10px 15px 10px}
+
+th {text-align: left; padding: 5px}
+td {text-align: left; padding: 4px;font-size:14px}

@@ -1,0 +1,52 @@
+
+
+<template name="Users">
+  {{> Nav}}
+
+  <h1>chaz Users</h1>
+
+  <table>
+
+
+  </table>
+
+  {{#each users}}
+
+    <h3>{{username}}</h3>
+
+    {{#if recs}}
+    <table border=1>
+
+      <tr>
+        <th width=70>Category</th>
+        <th>Recommendation</th>
+        <th>Note</th>
+        <th width=100>Recr</th>
+        <th width=160>Time Date Saved</th>
+        <th width=100>Time Ago</th>
+        <th width=100>Time between Rec saves</th>
+      </tr>
+
+      {{#each recs}}
+        <tr>
+          <td>{{category}}</td>
+          <td>{{title}}</td>
+          <td>{{note}}</td>
+          <td>{{recr.name}}</td>
+          <td>{{formatDate createdAt}}</td>
+          <td>{{timeAgo createdAt}}</td>
+          <td>{{timeBetween}}</td>
+        </tr>
+      {{/each}}
+
+
+    </table>
+
+    {{else}}
+      <p>User has not saved any recs</p>
+    {{/if}}
+
+  {{/each}}
+
+
+</template>
