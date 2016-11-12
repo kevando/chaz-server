@@ -1,2 +1,5 @@
 .meteor
 node_modules
+
+# routes config
+config.js
